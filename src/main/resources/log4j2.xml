@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="trace">
+	<Appenders>
+		<Console name="MyConsole" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{1}.%M: %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="trace">
+		</Root>
+		<Logger name="demo.jersey" level="trace">
+			<AppenderRef ref="MyConsole"/>
+		</Logger>
+	</Loggers>
+</Configuration>
